@@ -1,6 +1,6 @@
 FROM ubuntu:16.04
 
-RUN apt-get install curl -y
+RUN apt-get update && apt-get install curl -y
 
 RUN apt-get install nginx
 
