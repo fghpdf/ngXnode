@@ -5,8 +5,6 @@ RUN apt-key adv --keyserver pgp.mit.edu --recv-keys 573BFD6B3D8FBC641079A6ABABF5
     apt-get update
 RUN apt-get update && apt-get install curl -y
 
-RUN apt-get install -y nginx
-
 RUN curl -sL https://deb.nodesource.com/setup_8.x | bash - && \
     apt-get install -y nodejs
  
